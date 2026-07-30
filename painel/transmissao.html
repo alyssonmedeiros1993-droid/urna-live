@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Controle de Transmissão - Urna Live</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+
+<body>
+
+
+<header class="topo">
+
+    <h1>🎥 Controle da Transmissão</h1>
+
+    <p>Gerencie o estado da live</p>
+
+</header>
+
+
+
+<main class="conteudo">
+
+
+<section class="card">
+
+    <h2>Status da transmissão</h2>
+
+
+    <p id="statusLive">
+        Offline
+    </p>
+
+
+    <button onclick="iniciarLive()">
+        Iniciar Live
+    </button>
+
+
+    <button onclick="pausarLive()">
+        Pausar Live
+    </button>
+
+
+</section>
+
+
+
+<section class="card">
+
+    <h2>Mensagem da tela</h2>
+
+
+    <input 
+        type="text" 
+        id="mensagemLive"
+        placeholder="Digite uma mensagem">
+
+
+    <br><br>
+
+
+    <button onclick="enviarMensagem()">
+        Enviar mensagem
+    </button>
+
+
+</section>
+
+
+</main>
+
+
+
+<script src="../js/transmissao.js"></script>
+
+
+</body>
+
+</html>
