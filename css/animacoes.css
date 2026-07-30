@@ -1,0 +1,105 @@
+/* ===============================
+   PROJETO URNA LIVE
+   animacoes.css
+================================ */
+
+
+/* Entrada suave dos cards */
+
+.card{
+
+    animation: aparecer 0.5s ease;
+
+}
+
+
+
+@keyframes aparecer{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+/* Destaque do vencedor */
+
+.vencedor{
+
+    animation: brilho 1.5s infinite;
+
+}
+
+
+
+@keyframes brilho{
+
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+
+    50%{
+
+        transform:scale(1.05);
+
+    }
+
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+
+}
+
+
+
+/* Efeito de atualização */
+
+.atualizando{
+
+    animation: piscar 1s;
+
+}
+
+
+
+@keyframes piscar{
+
+
+    0%{
+
+        opacity:0.3;
+
+    }
+
+
+    100%{
+
+        opacity:1;
+
+    }
+
+
+}
