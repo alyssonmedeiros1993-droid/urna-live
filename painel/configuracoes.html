@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurações - Urna Live</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<header class="topo">
+    <h1>⚙️ Configurações</h1>
+    <p>Ajustes do Projeto Urna Live</p>
+</header>
+
+
+<main class="conteudo">
+
+    <section class="card">
+
+        <h2>Nome do Projeto</h2>
+
+        <input 
+            type="text" 
+            id="nomeProjeto" 
+            placeholder="Digite o nome da urna">
+
+        <br><br>
+
+        <button onclick="salvarConfiguracao()">
+            Salvar Configuração
+        </button>
+
+    </section>
+
+
+    <section class="card">
+
+        <h2>Status da votação</h2>
+
+        <p id="status">
+            Votação ativa
+        </p>
+
+        <button onclick="alternarStatus()">
+            Ativar / Pausar votação
+        </button>
+
+    </section>
+
+
+</main>
+
+
+<script src="../js/config.js"></script>
+
+</body>
+
+</html>
