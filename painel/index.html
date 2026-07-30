@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel Urna Live</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<header class="topo">
+    <h1>⚙️ Painel de Controle</h1>
+    <p>Gerencie a votação da live</p>
+</header>
+
+
+<main class="conteudo">
+
+    <section class="card">
+
+        <h2>Candidato 1</h2>
+
+        <button onclick="adicionarVoto(1)">
+            + Voto Candidato 1
+        </button>
+
+    </section>
+
+
+    <section class="card">
+
+        <h2>Candidato 2</h2>
+
+        <button onclick="adicionarVoto(2)">
+            + Voto Candidato 2
+        </button>
+
+    </section>
+
+
+    <section class="card">
+
+        <h2>Controles</h2>
+
+        <button onclick="zerarVotos()">
+            Zerar votação
+        </button>
+
+    </section>
+
+</main>
+
+
+<script src="../js/painel.js"></script>
+
+</body>
+
+</html>
